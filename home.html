@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay- Best Payment Solution</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="home.css">
+    <style>
+        #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("loader.gif") no-repeat center;
+    background-size: 100% 100%;
+    z-index: 99999;
+  }
+ 
+.about1 {
+  padding: 80px 0;
+}
+
+.about1  .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about1  .content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about1  .image {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.about1  .texts {
+  margin-top: 30px;
+}
+
+.about1  button {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .about1  .row {
+    flex-direction: column;
+  }
+
+  .about1  .content,
+  .about1  .image {
+    margin: 0;
+  }
+
+  .about1  .texts {
+    margin-top: 20px;
+  }
+
+  .about1  button {
+    margin-top: 10px;
+  }
+}
+
+  
+    </style>
+
+</head>
+<body onload="myFunction()">
+    <!-- <div id="loader"></div> -->
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <!-- <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medcare. </a> -->
+<img class="logo" src="img/logo.png" alt="">
+    <nav class="navbar">
+        <ul>
+        <li class="home "><a  href="#home">Payments</a></li>
+        <li class="about"><a href="#about">Banking</a></li>
+        <li class="doctors"><a href="#doctors">Resources</a></li>
+        <li class="review"><a href="#review">Pricing</a></li>
+        <li class="review"><a href="#review">Login</a></li>
+        <li class="review"><a href="#review">Signup</a></li>
+        <!-- <li class="location"><a href="https://goo.gl/maps/XbjC37jh3JcCMboCA">Location</a></li> -->
+        
+    </ul>
+    </nav>
+
+    
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+
+<!-- header section ends -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fas fa-chevron-up"></span></button>
+
+<!-- home section starts  -->
+
+<section class="about start" id="about">
+
+    <div class="row">
+
+        <div class="content" data-aos="fade-left">
+            <h3 >Power your finance, <br> grow your business</h3> <br>
+<p style="color:#f5f5f5">Accept payments from customers.  Automate <br> payouts to vendors & employees. Never run <br> out of working capital.</p>
+
+
+           <button class="btn" >Sign up now</button>
+        </div>
+        <div class="image" data-aos="fade-right">
+            <img src="img/home.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+
+<h2 class="accept">Accept Payments with Razorpay Payment Suite</h2>
+<hr class="line">
+
+<section class="about1" id="about"  >
+    <div class="row">
+
+        <div class="content" data-aos="fade-left">
+            <h2> Supercharge your business with the <br> all-powerful  <span>Payment Gateway</span> </h2>
+<div class="texts">
+    <p style="color:#333"><span>&#10003;</span> 100+ Payment Methods</p>
+    <p style="color:#333"><span>&#10003;</span>Industry Leading Success Rate</p>
+    <p style="color:#333"><span>&#10003;</span>Superior Checkout Experience</p>
+    <p style="color:#333"><span>&#10003;</span>Easy to Integrate</p>
+    <p style="color:#333"><span>&#10003;</span>Instant Settlements from day 1</p>
+    <p style="color:#333"><span>&#10003;</span>In-depth Reporting and Insights</p>
+    <button>Sign up Now</button>
+    <button>Know More</button>
+</div>
+
+        </div>
+        <div class="image" data-aos="fade-right" >
+            <img src="img/img1.png" alt="" >
+        </div>
+    </div>
+
+</section>
+
+
+<section class="services" id="events" >
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Payment Links</h3>
+            </div>
+            <div class="con">
+                <p class="para">Share Payment Link via an email,SMS,Messenger,chatbot,etc. <br> and get paid immediately</p>
+                <button class="btn" >Learn More</button>
+            </div>
+            
+        </div>
+       
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Payment Pages</h3>
+            </div>
+            <div class="con">
+                <p class="para">Take your store online instantly with zero coding. Accept International and Domestic Payments</p>
+                <button class="btn" >Learn More</button>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Payment Buttons</h3>
+            </div>
+            <div class="con">
+                <p >Creat, Copy and Collect with Payment Button. Collect one time or subscription payments and more</p>
+                <button class="btn" >Learn More</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Subscriptions</h3>
+            </div>
+            <div class="con">
+                <p class="para">Subscription plans with automated recurring transactions on various payment modes.</p>
+                <button class="btn" >Learn More</button>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Route</h3>
+            </div>
+            <div class="con">
+                <p >Split incoming payments automatically to vendor's accounts, manage marketplace money flow...</p>
+                <button class="btn" >Learn More</button>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Smart Collect</h3>
+            </div>
+            <div class="con">
+                <p class="para">Automatically reconcile incoming NEFT, RTGS, IMPS, UPI Payments using Customer Identifiers & UPI-IDs</p>
+                <button class="btn" >Learn More</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+</section>
+<section style="padding:2rem 0;background:  linear-gradient(45deg,#02042b,#02042b 50%);">
+<h2 class="accept" style="color:#fff">Explore Razorpay Business Banking</h2>
+<hr class="line">
+<section class="about1" id="about"  style="background:  linear-gradient(45deg,#02042b,#02042b 50%)" >
+    <div class="row">
+
+        <div class="content" data-aos="fade-left">
+            <h2 style="color:#fff"> Manage your company's finances with <img src="img/xlogo.svg" alt=""> <span> Business Banking </span></h2>
+<div class="texts">
+    <p><span>&#10003;</span> Open a fully digital current account</p>
+    <p><span>&#10003;</span>Automate payables & compliment payments</p>
+    <p><span>&#10003;</span>Simplify and track spends with Corporate cards</p>
+    <p><span>&#10003;</span>View financial insights at a glance</p>
+   
+    <button style="border:none">Sign up Now</button>
+    <button style="border:none">Know More</button>
+</div>
+
+        </div>
+        <div class="image" data-aos="fade-right" >
+            <img src="img/home.jpg" alt="" >
+        </div>
+    </div>
+
+</section>
+<section class="services" id="newserve">
+<div class="box-container">
+
+    <div class="box" data-aos="fade-right">
+        <div class="head">
+            <h3>Current Account</h3>
+        </div>
+        <div class="con">
+            <p class="para">Current accounts for fast-growing businesses, supported by the best in-class technology</p>
+            <button class="btn" >Learn More</button>
+        </div>
+        
+    </div>
+   
+    <div class="box" data-aos="fade-right">
+        <div class="head">
+            <h3>Capital and Credit</h3>
+        </div>
+        <div class="con">
+            <p class="para">Instant additional cash and corporate cards designed for growing businesses</p>
+            <button class="btn" >Learn More</button>
+        </div>
+        
+    </div>
+    <div class="box" data-aos="fade-right">
+        <div class="head">
+            <h3>Payouts</h3>
+        </div>
+        <div class="con">
+            <p >Make simple, reliable and secure payouts to bank accounts, UPI IDs or wallets</p>
+            <button class="btn" >Learn More</button>
+        </div>
+        
+    </div>
+</div>
+</section>
+</div>
+
+<div class="longtext">
+    <span>Check out the live demo to learn how <img src="img/xlogo.svg" alt=""> works. No sign-up required!</span>
+    <button class="btn">Check out the demo <span>&#8594;</span> </button>
+</div>
+
+<section class="services" id="events" style="background-color: #f5f5f5;">
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right" style="border:none;background-color: #f5f5f5;">
+           
+            <div class="con">
+                <h1 style="color:#333;font-size:4rem">New in the <span style="color:hsla(212, 82.0%, 54.3%, 1)">Razorpay</span> 
+                    Product Suite</h1>
+                
+            </div>
+            
+        </div>
+       
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Corporate Pages</h3>
+            </div>
+            <div class="con">
+                <p class="para">Simply your recurring,international and team expenses with savings on every spend. Save upto 10 lacs every month</p>
+                <button class="btn" >Know More</button>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>UPI Auotpay</h3>
+            </div>
+            <div class="con">
+                <p>Allow customers to set up recurring payments using UPI Apps.</p>
+                <button class="btn" >Know More</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Magic Checkout</h3>
+            </div>
+            <div class="con">
+                <p class="para">Improve your order conversion rates and reduce return-to-origins.Boost your business by 20%</p>
+                <button class="btn" >Know More</button>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Payment Button</h3>
+            </div>
+            <div class="con">
+                <p>Accept Payments on your website,in less than 5 minutes. No Developer needed.</p>
+                <button class="btn" >Know More</button>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+            <div class="head">
+                <h3>Instant Settlements</h3>
+            </div>
+            <div class="con">
+                <p class="para">Settle your customers payments within 10 minutes as soon a your account is activated,even during holidays.</p>
+                <button class="btn" >Know More</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+</section>
+<section class="services features" id="events" style="background-color: hsla(212, 82.0%, 54.3%, 1);">
+    <h2 class="accept" style="color:#f5f5f5">Features</h2>
+<hr class="line" style="background-color: #333;">
+<h3 id="empower">Empower your business with all the right tools to accept <br> online payments and provide the best customer experience</h3>
+    <br><br><br><div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+           
+            <div class="con">
+                <img src="img/imag1.svg" alt="">
+                <h3>Instant Activation</h3>
+                <p>Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+            
+            <div class="con">
+                <img src="img/imag2.svg" alt="">
+                <h3>Easy Integration</h3>
+                <p>With plugins for all major platforms and languages, integrate and go live with Razorpay in less than an hour.</p>
+            </div>
+            
+        </div>
+       
+        <div class="box" data-aos="fade-right">
+            
+            <div class="con">
+                <img src="img/imag3.svg" alt="">
+                <h3>API Driven</h3>
+                <p>Build your business for scale with our complete API-driven automation that requires zero manual intervention.</p>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+           
+            <div class="con">
+                <img src="img/imag4.svg" alt="">
+                <h3>100+ payment modes</h3>
+                <p>Offer your customers the luxury of all payment modes including Credit/Debit cards, Netbanking, UPI, Wallets etc.</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+          
+            <div class="con">
+                <img src="img/imag5.svg" alt="">
+                <h3>Simple Pricing</h3>
+                <p>Our innovative payment solutions with competitive pricing make payments simpler.</p>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+          
+            <div class="con">
+                <img src="img/imag6.svg" alt="">
+                <h3 style="text-align: left;">Best in Industry Support</h3>
+                <p>Always available email, phone and chat based support to help you in your every step.</p>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+            
+            <div class="con">
+                <img src="img/imag7.svg" alt="">
+                <h3>Dashboard Reporting</h3>
+                <p>Real-time data and insights on your Razorpay Dashboard to make informed business decisions.</p>
+            </div>
+            
+        </div>
+        <div class="box" data-aos="fade-right">
+           
+            <div class="con">
+                <img src="img/imag8.svg" alt="">
+                <h3 style="text-align:left;margin-left:5.5rem;">Secure</h3>
+                <p>PCI DSS Level 1 compliant solution which removes your burden of regulatory compliance.</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+</section>
+<section class="about" id="about" style="background: #fff;">
+
+    <div class="row">
+
+        <div class="content" data-aos="fade-left">
+            <h3 style="color:#333;font-size:2.5rem;text-shadow:none">Join the 50,00,000+ businesses using Razorpay</h3>
+<p style="font-size:1.5rem">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.
+<br> <br>
+    Focus on your business while we handle the complexities of payments for you.</p>
+        </div>
+        <div class="image" data-aos="fade-right">
+            <img src="img/img1.png" alt="">
+        </div>
+    </div>
+
+</section>
+<section style="padding:2rem 0;background:  hsla(212, 82.0%, 54.3%, 1)">
+    <h2 class="accept" style="color:#fff">Explore Razorpay Business Banking</h2>
+    <hr class="line" style="background:#000">
+    <section class="about1" id="about"  style="background: hsla(212, 82.0%, 54.3%, 1)" >
+        <div class="row">
+    
+            <div class="content" data-aos="fade-left" style="padding-bottom:3rem;">
+                <h2 style="color:#fff;font-size:2.4rem;margin-top:2rem;letter-spacing: -.5px;"> 
+                    Supercharge your business with Razorpay</h2>
+                    <p style="color:#fff;font-size:1.5rem">Sign up now to experience the future of payments and offer your customers the best checkout experience.</p>
+    <div class="texts" id="newtext">
+        <p><span>&#10003;</span>Quick Onboarding</p>
+        <p><span>&#10003;</span>Access to entire product suite</p>
+        <p><span>&#10003;</span>API access</p>
+        <p><span>&#10003;</span>24x7 support</p>
+       
+        <button>Sign up Now <span >&#8594;</span></button>
+    </div>
+    
+            </div>
+            <div class="image" data-aos="fade-right" >
+                <img src="img/img2.svg" style="width:300px;height:300px;margin-right:0;margin-left:4rem;" alt="" >
+            </div>
+        </div>
+    
+    </section>
+</section>
+    <section  id="review">
+        <h3 style="text-shadow:none" class="heading">An Experience <br>
+           <span> People Love to Talk About</span></h3>
+      <div class="test">
+      <figure class="snip1390">
+        <div id="reviewsec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3" class="profile" />
+        <figcaption>
+          <h2>Eleanor Crisp</h2>
+          <h4>UX Design</h4>
+        </figcaption>
+      </div>
+      <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea nobis nam eius deserunt sed maxime, quia reprehenderit quas facere.</blockquote>
+      </figure>
+      <figure class="snip1390">
+        <div id="reviewsec">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" />
+            <figcaption>
+                <h2>Gordon Norman</h2>
+                <h4>Accountant</h4>
+        </figcaption>
+      </div>
+      <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea nobis nam eius deserunt sed maxime, quia reprehenderit quas facere.</blockquote>
+      </figure>
+      <figure class="snip1390">
+        <div id="reviewsec">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample6" class="profile" />
+            <figcaption>
+            <h2>Sue Shei</h2>
+            <h4>Public Relations</h4>
+        </figcaption>
+      </div>
+      <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea nobis nam eius deserunt sed maxime, quia reprehenderit quas facere.</blockquote>
+      </figure>
+      
+      </div>
+      </section>
+
+<section class="footer" style="background:linear-gradient(45deg,#02042b,#02042b 50%);">
+
+    <div class="box-container">
+<div>
+        <div class="box" data-aos="fade-right">
+            <img src="img/logo.png" style="height:50px;width:150px;" alt="">
+            <br><br>
+            <div style="color:#fff;font-size:1.5rem">
+            <p>Razorpay is the only payments solution in India that allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
+            <br><br>RazorpayX supercharges your business banking experience, bringing effectiveness, efficiency, and excellence to all financial processes. With RazorpayX, businesses can get access to fully-functional current accounts, supercharge their payouts and automate payroll compliance.
+            <br><br>Manage your marketplace, automate bank transfers, collect recurring payments, share invoices with customers and avail working capital loans - all from a single platform. Fast forward your business with Razorpay.
+        </div>
+
+    </div>
+
+    <h2 id="online">FIND US ONLINE</h2>
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-github"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+    <h2 id="online" style="padding-top:3rem">REGD. OFFICE ADDRESS</h2>
+    <p style="color:#fff;font-size:1.5rem;padding-left:4rem;line-height:2;padding-top:3rem">Razorpay Software Private Limited,<br>
+        1st Floor, SJR Cyber,<br>
+        22 Laskar Hosur Road, Adugodi,<br>
+        Bengaluru, 560030,<br>
+        Karnataka, India<br>
+        CIN: U72200KA2013PTC097389</p>
+        <br>
+        <p style="color:#fff;font-size:1.5rem;padding-left:4rem;line-height:2;padding-top:3rem">© Razorpay 2023
+<br>
+            All Rights Reserved</p>
+</div>
+<div class="boxx" style="display: grid;
+grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+gap:5rem;">
+        <div class="box" data-aos="fade-right">
+            <h3>Banking Plus</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i> RayzorpayX </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Current Accounts </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Payouts </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Payment Links </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Corporate Credit Cards </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> View Live Demo </a>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <h3>Accept Payments</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Payment Gateway </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Payment Pages </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Payment Links </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> QR Codes </a>
+            <a href="#"> <i class="fas fa-chevron-right"> </i>Subscriptions </a>
+            <a href="#"> <i class="fas fa-chevron-right"> </i>Smart Collect </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Optimizer </a>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <h3>Company</h3>
+            <a href="#">  <i class="fas fa-chevron-right"></i> About Us </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Careers </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Terms of use </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Privacy Policy </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Grievance Redressal </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Responsible Disclosure </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Partners </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> White Papers</a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Corporate Information </a>
+        </div>
+        <div class="box" data-aos="fade-left">
+            <h3>Developers</h3>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Docs</a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Integrations </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> API Reference </a>
+            <br><br><br><br>
+            <h3>Help and Support</h3>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Support</a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Knowledge Base </a>
+            
+        </div>
+        <div class="box" data-aos="fade-left">
+            <h3>Lending</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Razorpay Capital </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Instant Settlements </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Working Capital Loans </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Marketplace Instant Settlements </a>
+            
+        </div>
+       
+        <div class="box" data-aos="fade-left">
+            <h3>Become a Partner</h3>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Refer and Earn</a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Onboarding APIs </a>
+            
+        </div>
+        <div class="box" data-aos="fade-left">
+            <h3>Solutions</h3>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Education</a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> E-Commerce </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> SaaS </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> BFSI </a>
+            
+        </div>
+        <div class="box" data-aos="fade-left">
+            <h3>Free Tools</h3>
+            <a href="#">  <i class="fas fa-chevron-right"></i> GST Calculator</a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> Online TDS Payment </a>
+            <a href="#">  <i class="fas fa-chevron-right"></i> GST Number Search</a>
+            
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- custom js file link  -->
+<script src="index.js"></script>
+
+</body>
+</html>
